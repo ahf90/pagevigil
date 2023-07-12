@@ -1,0 +1,71 @@
+---
+# The branches on which releases should happen
+branches:
+  - main
+plugins:
+# commit-analyzer determines the type of release by analyzing commits with conventional-changelog
+# we use the default angular commit message conventions
+# https://github.com/angular/angular/blob/main/CONTRIBUTING.md#commit
+- - "@semantic-release/commit-analyzer"
+  - releaseRules:
+    - type: refactor
+      release: patch
+    - type: test
+      release: patch
+    - type: style
+      release: patch
+    - type: perf
+      release: patch
+    - type: ci
+      release: patch
+    - type: build
+      release: patch
+    - type: chore
+      release: patch
+
+# Generate release notes for the commits added since the last release with conventional-changelog
+- - "@semantic-release/release-notes-generator"
+  - preset: conventionalcommits
+    presetConfig:
+      types:
+      - type: feat
+        section: "Features"
+        hidden: false
+      - type: fix
+        section: "Fixes"
+        hidden: false
+      - type: docs
+        section: "Documentation"
+        hidden: false
+      - type: style
+        section: "Style"
+        hidden: false
+      - type: refactor
+        section: "Refactor"
+        hidden: false
+      - type: perf
+        section: "Performance"
+        hidden: false
+      - type: test
+        section: "Tests"
+        hidden: false
+      - type: ci
+        section: "CI"
+        hidden: false
+      - type: chore
+        section: "Chores"
+        hidden: false
+
+# Update the CHANGELOG.md file
+- - "@semantic-release/changelog"
+  - changelogFile: CHANGELOG.md
+
+# Publishes a GitHub "release" and comments on released Pull Requests/Issues.
+- - "@semantic-release/github"
+  - assets:
+    - CHANGELOG.md
+
+# Commits release assets (changelog) to the repo
+- - "@semantic-release/git"
+  - assets:
+    - CHANGELOG.md

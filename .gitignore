@@ -8,3 +8,6 @@
 
 # jetbrains IDEs
 .idea
+
+# virtualenv
+venv
