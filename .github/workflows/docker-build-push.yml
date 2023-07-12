@@ -6,7 +6,12 @@ on:
       - main
 
 permissions:
+  contents: read
   packages: write
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
 
 jobs:
   publish:
@@ -15,19 +20,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Login to GHCR
+        uses: docker/login-action@v2
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Docker meta
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ghcr.io/ahf90/publish-packages/pagevigil
-          tags: type=sha
-
-      - name: Login to GHCR
-        uses: docker/login-action@v2
-        with:
-          registry: ghcr.io
-          username: ${{ github.repository_owner }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
       - name: Build container
         uses: docker/build-push-action@v4
@@ -35,3 +39,4 @@ jobs:
           context: app
           push: true
           tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
