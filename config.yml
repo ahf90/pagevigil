@@ -1,0 +1,8 @@
+---
+pages:
+- url: https://example.com
+  browser: chrome
+- url: https://example.net
+  browser: chrome
+- url: https://example.org
+  browser: chrome
