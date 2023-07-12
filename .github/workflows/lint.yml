@@ -1,6 +1,6 @@
 name: Lint Python and Terraform
 
-on: [push, pull_request]
+on: push
 
 jobs:
   flake8-lint:
