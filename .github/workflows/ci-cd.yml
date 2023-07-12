@@ -72,6 +72,13 @@ jobs:
         with:
           node-version: 18.15.0
 
+      - name: Semantic bot token
+        id: bot-token
+        uses: getsentry/action-github-app-token@v2
+        with:
+          app_id: ${{ secrets.SEMANTIC_APP_ID }}
+          private_key: ${{ secrets.SEMANTIC_APP_PRIVATE_KEY }}
+
       - name: Semantic Release
         id: semantic
         uses: cycjimmy/semantic-release-action@v3.4.2
@@ -80,7 +87,7 @@ jobs:
           extra_plugins: |
             conventional-changelog-conventionalcommits@5.0.0
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.bot-token.outputs.token }}
 
   publish:
     if: needs.semantic-release.outputs.new_release_published == 'true'
