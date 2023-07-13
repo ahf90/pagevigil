@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/ahf90/pagevigil/compare/v1.1.4...v1.1.5) (2023-07-13)
+
+
+### Chores
+
+* **deps:** update all non-major dependencies ([#13](https://github.com/ahf90/pagevigil/issues/13)) ([e561aa1](https://github.com/ahf90/pagevigil/commit/e561aa11bcb0124cd3dcfcb3219359dd4581b194))
+
 ## [1.1.4](https://github.com/ahf90/pagevigil/compare/v1.1.3...v1.1.4) (2023-07-13)
 
 
