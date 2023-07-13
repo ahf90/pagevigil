@@ -1,3 +1,10 @@
+## [1.2.0](https://github.com/ahf90/pagevigil/compare/v1.1.5...v1.2.0) (2023-07-13)
+
+
+### Features
+
+* move to x86 instead of arm64 ([#19](https://github.com/ahf90/pagevigil/issues/19)) ([610959f](https://github.com/ahf90/pagevigil/commit/610959f082cfef6ec157533b832febc48b7cadd1))
+
 ## [1.1.5](https://github.com/ahf90/pagevigil/compare/v1.1.4...v1.1.5) (2023-07-13)
 
 
