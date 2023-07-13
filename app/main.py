@@ -7,13 +7,18 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import yaml
 
-CONFIG = os.environ["CONFIG"]
-BUCKET_ID = os.environ['BUCKET_ID']
+CONFIG = os.environ.get("CONFIG")
+BUCKET_ID = os.environ.get('BUCKET_ID')
 
 s3 = boto3.client('s3')
 
 
 def handler(event, context):
+    if not CONFIG or not BUCKET_ID:
+        # TODO: send to SNS
+        print("Environment variables not set")
+        raise
+
     options = Options()
     options.binary_location = '/opt/headless-chromium'
     options.add_argument('--headless')
