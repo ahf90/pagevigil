@@ -133,4 +133,4 @@ jobs:
           push: true
           cache-from: type=gha
           cache-to: type=gha,mode=max
-          tags: ${{ needs.semantic-release.outputs.new_release_git_tag }}
+          tags: ${{ vars.ECR_REPO }}:${{ needs.semantic-release.outputs.new_release_git_tag }}
