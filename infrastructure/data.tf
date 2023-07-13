@@ -5,7 +5,7 @@ data "aws_iam_policy_document" "assume_role" {
 
     condition {
       test     = "StringLike"
-      values   = ["repo:ahf90/pagevigil:*",]
+      values   = ["repo:ahf90/pagevigil:*", ]
       variable = "token.actions.githubusercontent.com:sub"
     }
 
