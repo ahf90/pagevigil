@@ -9,7 +9,7 @@
 # jetbrains IDEs
 .idea
 
-# virtualenv
+# Environments
 venv
 
 # Byte-compiled / optimized / DLL files
