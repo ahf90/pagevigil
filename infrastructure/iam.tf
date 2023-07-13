@@ -28,6 +28,10 @@ data "aws_iam_policy" "ecr_full" {
   name = "AmazonEC2ContainerRegistryFullAccess"
 }
 
+data "aws_iam_policy" "ecr_public_full" {
+  name = "AmazonElasticContainerRegistryPublicFullAccess"
+}
+
 resource "aws_iam_role" "github_actions_ecr" {
   name = "GitHubActionsECR"
 
@@ -50,4 +54,9 @@ resource "aws_iam_role" "github_actions_ecr" {
 resource "aws_iam_role_policy_attachment" "github_actions_ecr" {
   role       = aws_iam_role.github_actions_ecr.name
   policy_arn = data.aws_iam_policy.ecr_full.arn
+}
+
+resource "aws_iam_role_policy_attachment" "github_actions_ecr_public" {
+  role       = aws_iam_role.github_actions_ecr.name
+  policy_arn = data.aws_iam_policy.ecr_public_full.arn
 }
