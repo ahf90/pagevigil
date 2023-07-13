@@ -14,7 +14,7 @@ permissions:
   packages: write
 
 env:
-  AWS_REGION: us-east-2
+  AWS_REGION: us-east-1
 
 jobs:
   tests:
@@ -72,7 +72,7 @@ jobs:
           persist-credentials: false
 
       - name: 'Setup Node'
-        uses: actions/setup-node@v3.6.0
+        uses: actions/setup-node@v3.7.0
         with:
           node-version: 18.15.0
 
@@ -121,6 +121,8 @@ jobs:
       - name: Login to Amazon ECR
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v1
+        with:
+          registry-type: public
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
