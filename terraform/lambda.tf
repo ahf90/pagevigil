@@ -2,17 +2,18 @@ module "screenshot_lambda" {
   source  = "terraform-aws-modules/lambda/aws"
   version = "5.2.0"
 
-  function_name  = "pagevigil-${local.organization}"
-  description    = "Screenshots pages and stores the screenshots in S3"
-  create_package = false
-  image_uri      = "public.ecr.aws/m5e2w3a9/pagevigil:latest"
-  package_type   = "Image"
-  architectures  = ["arm64"]
+  function_name                           = "pagevigil-${local.organization}"
+  description                             = "Screenshots pages and stores the screenshots in S3"
+  create_package                          = false
+  image_uri                               = "${module.pagevigil.repository_url}:v1.1.3"
+  package_type                            = "Image"
+  architectures                           = ["x86_64"]
+  create_current_version_allowed_triggers = false
+  cloudwatch_logs_retention_in_days       = 7
+  timeout                                 = 60
 
   attach_policy = true
   policy        = aws_iam_policy.pagevigil_lambda.arn
-
-  cloudwatch_logs_retention_in_days = 7
 
   allowed_triggers = {
     Cron = {
@@ -54,6 +55,24 @@ data "aws_iam_policy_document" "pagevigil_lambda" {
       "s3:*Object"
     ]
     resources = ["${module.storage_bucket.s3_bucket_arn}/*"]
+  }
+  statement {
+    effect = "Allow"
+    actions = [
+      "ecr:GetAuthorizationToken",
+      "ecr:BatchCheckLayerAvailability",
+      "ecr:GetDownloadUrlForLayer",
+      "ecr:GetRepositoryPolicy",
+      "ecr:DescribeRepositories",
+      "ecr:ListImages",
+      "ecr:DescribeImages",
+      "ecr:BatchGetImage",
+      "ecr:GetLifecyclePolicy",
+      "ecr:GetLifecyclePolicyPreview",
+      "ecr:ListTagsForResource",
+      "ecr:DescribeImageScanFindings"
+    ]
+    resources = [module.pagevigil.repository_arn]
   }
 }
 

@@ -12,7 +12,7 @@ module "public_ecr" {
     about_text        = "Please see https://github.com/ahf90/pagevigil/blob/main/README.md"
     usage_text        = "Please see https://github.com/ahf90/pagevigil/blob/main/LICENSE"
     operating_systems = ["Linux"]
-    architectures     = ["arm64"]
+    architectures     = ["x86"]
   }
 
   tags = local.tags
