@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/ahf90/pagevigil/compare/v1.1.2...v1.1.3) (2023-07-13)
+
+
+### CI
+
+* fix registry type ([#17](https://github.com/ahf90/pagevigil/issues/17)) ([d740355](https://github.com/ahf90/pagevigil/commit/d740355146eb5442585b28508d8e5809e61771ee))
+
 ## [1.1.2](https://github.com/ahf90/pagevigil/compare/v1.1.1...v1.1.2) (2023-07-13)
 
 
