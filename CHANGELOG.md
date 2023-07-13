@@ -1,3 +1,21 @@
+## [1.1.0](https://github.com/ahf90/pagevigil/compare/v1.0.0...v1.1.0) (2023-07-13)
+
+
+### Features
+
+* add pytest ([#9](https://github.com/ahf90/pagevigil/issues/9)) ([92b398e](https://github.com/ahf90/pagevigil/commit/92b398ef63d813f5b462fad9df51620b596fd365))
+
+
+### Refactor
+
+* ordering on action ([#10](https://github.com/ahf90/pagevigil/issues/10)) ([319595b](https://github.com/ahf90/pagevigil/commit/319595b2dd468fab659d79c7b1ddec1468f51ad1))
+
+
+### Chores
+
+* fix erroneous command in ci ([#12](https://github.com/ahf90/pagevigil/issues/12)) ([0fc7732](https://github.com/ahf90/pagevigil/commit/0fc77321f9c80f8ff9c1e2b833a8062921ef5897))
+* fix typo in role name ([#8](https://github.com/ahf90/pagevigil/issues/8)) ([23ee7e9](https://github.com/ahf90/pagevigil/commit/23ee7e9e21ed8374711cf7fa0f93512ca18a999a))
+
 ## 1.0.0 (2023-07-13)
 
 
