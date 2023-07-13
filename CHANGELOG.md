@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/ahf90/pagevigil/compare/v1.1.3...v1.1.4) (2023-07-13)
+
+
+### Chores
+
+* **deps:** update boto packages ([#14](https://github.com/ahf90/pagevigil/issues/14)) ([90f74e7](https://github.com/ahf90/pagevigil/commit/90f74e7161221262425e1c7b76e8dcefaab200c6))
+
 ## [1.1.3](https://github.com/ahf90/pagevigil/compare/v1.1.2...v1.1.3) (2023-07-13)
 
 
