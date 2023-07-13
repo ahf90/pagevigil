@@ -24,7 +24,6 @@ jobs:
 
       - name: Set up Python
         uses: actions/setup-python@v4
-        working-directory: app
         with:
           python-version-file: '.python-version'
 
