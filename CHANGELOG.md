@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/ahf90/pagevigil/compare/v1.1.1...v1.1.2) (2023-07-13)
+
+
+### CI
+
+* fix image tag ([#16](https://github.com/ahf90/pagevigil/issues/16)) ([79d8758](https://github.com/ahf90/pagevigil/commit/79d875886ff7ebdd5caee8629ffa9e6db4f80f62))
+
 ## [1.1.1](https://github.com/ahf90/pagevigil/compare/v1.1.0...v1.1.1) (2023-07-13)
 
 ## [1.1.0](https://github.com/ahf90/pagevigil/compare/v1.0.0...v1.1.0) (2023-07-13)
