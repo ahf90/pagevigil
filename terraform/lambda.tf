@@ -27,7 +27,7 @@ module "screenshot_lambda" {
     BUCKET_ID = module.storage_bucket.s3_bucket_id
   }
 
-  tags = local.tags
+  tags       = local.tags
   depends_on = [null_resource.copy_image]
 }
 
