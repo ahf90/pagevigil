@@ -138,42 +138,30 @@ jobs:
           tags: ${{ vars.ECR_REPO }}:${{ needs.semantic-release.outputs.new_release_git_tag }}
 
   update-repo:
-    needs: publish
+    needs: [publish, semantic-release]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v2
+      - name: Semantic bot token
+          id: bot-token
+          uses: getsentry/action-github-app-token@v2.0.0
+          with:
+            app_id: ${{ secrets.SEMANTIC_APP_ID }}
+            private_key: ${{ secrets.SEMANTIC_APP_PRIVATE_KEY }}
+
+      - name: Update image tag in terraform.tfvars
+        run: |
+           echo "latest_image_tag = \"${{ needs.semantic-release.outputs.new_release_git_tag }}\"" > terraform.tfvars
+
+      - name: Commit files
+        run: |
+          git add terraform/terraform.tfvars
+          git commit -m "chore: update image tag to ${{ needs.semantic-release.outputs.new_release_git_tag }} [skip ci]"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
         with:
-          aws-region: ${{ env.AWS_REGION }}
-          role-to-assume: ${{ secrets.GHA_ASSUME_ROLE }}
-
-      - name: AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v2
-        with:
-          aws-region: ${{ env.AWS_REGION }}
-          role-to-assume: ${{ secrets.ECR_ROLE }}
-          aws-access-key-id: ${{ env.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ env.AWS_SECRET_ACCESS_KEY }}
-          aws-session-token: ${{ env.AWS_SESSION_TOKEN }}
-          role-skip-session-tagging: true
-          role-duration-seconds: 3000
-
-      - name: Login to Amazon ECR
-        id: login-ecr
-        uses: aws-actions/amazon-ecr-login@v1
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
-
-      - name: Build container
-        uses: docker/build-push-action@v4
-        with:
-          platforms: linux/amd64
-          context: app
-          push: true
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
-          tags: ${{ vars.ECR_REPO }}:${{ needs.semantic-release.outputs.new_release_git_tag }}
+          github_token: ${{ steps.bot-token.outputs.token }}
+          branch: main
