@@ -1,7 +1,13 @@
+resource "random_string" "random" {
+  length  = 8
+  special = false
+  upper   = false
+}
+
 module "storage_bucket" {
   source        = "terraform-aws-modules/s3-bucket/aws"
   version       = "3.14.0"
-  bucket        = "pagevigil-${local.organization}" # Bucket name
+  bucket        = "pagevigil-${random_string.random.result}"
   force_destroy = true
 
   server_side_encryption_configuration = {

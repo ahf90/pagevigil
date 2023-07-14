@@ -1,5 +1,4 @@
 locals {
-  organization = "pagevigil"
   tags = {
     owner   = "pagevigil"
     project = "pagevigil"
