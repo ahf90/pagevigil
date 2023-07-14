@@ -155,6 +155,14 @@ jobs:
         run: |
            echo "latest_image_tag = \"${{ needs.semantic-release.outputs.new_release_git_tag }}\"" > terraform.tfvars
 
+      - name: Setup Git User
+        run: |
+          # Extract commit information
+          AUTHOR_NAME=$(git show -s --format='%an' ${{ github.event.inputs.commit }})
+          AUTHOR_EMAIL=$(git show -s --format='%ae' ${{ github.event.inputs.commit }})
+          git config --local user.email "${AUTHOR_EMAIL}"
+          git config --local user.name "${AUTHOR_NAME}"
+
       - name: Commit files
         run: |
           git add terraform/terraform.tfvars
