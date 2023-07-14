@@ -2,10 +2,10 @@ module "screenshot_lambda" {
   source  = "terraform-aws-modules/lambda/aws"
   version = "5.2.0"
 
-  function_name                           = "pagevigil-${local.organization}"
+  function_name                           = "pagevigil"
   description                             = "Screenshots pages and stores the screenshots in S3"
   create_package                          = false
-  image_uri                               = "${module.pagevigil.repository_url}:v1.1.3"
+  image_uri                               = "${module.pagevigil.repository_url}:${var.latest_image_tag}"
   package_type                            = "Image"
   architectures                           = ["x86_64"]
   create_current_version_allowed_triggers = false
@@ -28,12 +28,13 @@ module "screenshot_lambda" {
   }
 
   tags = local.tags
+  depends_on = [null_resource.copy_image]
 }
 
 resource "aws_cloudwatch_event_rule" "cron" {
   name                = "PageVigilLambdaCron"
   description         = "Minutely event to trigger the PageVigil Lambda"
-  schedule_expression = "rate(1 minute)"
+  schedule_expression = "rate(60 minutes)"
 }
 
 resource "aws_cloudwatch_event_target" "cron_lambda_function" {
