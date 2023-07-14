@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/ahf90/pagevigil/compare/v1.3.1...v1.3.2) (2023-07-14)
+
+
+### Chores
+
+* fix image update ([#24](https://github.com/ahf90/pagevigil/issues/24)) ([e709e4d](https://github.com/ahf90/pagevigil/commit/e709e4dfbe263fdf8c17848fa6c1b2e868afb359))
+
 ## [1.3.1](https://github.com/ahf90/pagevigil/compare/v1.3.0...v1.3.1) (2023-07-14)
 
 
