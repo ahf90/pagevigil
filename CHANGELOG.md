@@ -1,3 +1,10 @@
+## [1.3.0](https://github.com/ahf90/pagevigil/compare/v1.2.0...v1.3.0) (2023-07-14)
+
+
+### Features
+
+* add repo copy script ([#22](https://github.com/ahf90/pagevigil/issues/22)) ([25add35](https://github.com/ahf90/pagevigil/commit/25add350a19ef22a66f8ffe6775dfcf93850c301))
+
 ## [1.2.0](https://github.com/ahf90/pagevigil/compare/v1.1.5...v1.2.0) (2023-07-13)
 
 
