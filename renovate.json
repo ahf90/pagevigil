@@ -6,6 +6,9 @@
     "group:allNonMajor",
     ":assignee(ahf90)"
   ],
+  "patch": {
+    "enabled": false
+  },
   "packageRules": [
     {
       "matchPackagePatterns": [ "^boto.*" ],
