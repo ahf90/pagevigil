@@ -38,8 +38,8 @@ def handler(event, context):
     service = Service(executable_path="/opt/chromedriver")
     chrome = webdriver.Chrome(service=service, options=options)
 
-    decoded_config = yaml.safe_load(base64.b64decode(CONFIG))
-    for page in decoded_config['pages']:
+    decoded_config = parse_config()
+    for page in decoded_config['chrome_urls']:
         chrome.get(page['url'])
         chrome.get_screenshot_as_file("/tmp/temp_screenshot.png")
         store_in_s3(page['url'])
@@ -55,9 +55,14 @@ def handler(event, context):
     return response
 
 
-def store_in_s3(url):
+def store_in_s3(url: str, browser: str):
+    """
+    Stores a screenshot in S3
+    :param url: URL of the page that was screenshotted
+    :param browser: which browser the screenshot was taken from
+    """
     try:
-        s3.upload_file("/tmp/temp_screenshot.png", BUCKET_ID, find_object_path(url))
+        s3.upload_file("/tmp/temp_screenshot.png", BUCKET_ID, find_object_path(url, browser))
         print("Upload Successful", url)
         return url
     except FileNotFoundError:
@@ -70,7 +75,29 @@ def store_in_s3(url):
         return None
 
 
-def find_object_path(url):
+def find_object_path(url: str, browser: str):
+    """
+    Converts a URL to a path that can be stored in S3
+    :param url: URL of the page that was screenshotted
+    :param browser: which browser the screenshot was taken from
+    :return: string path to use for S3 upload
+    """
     now = datetime.utcnow()
     parsed_url = urlparse(url)
-    return f"{parsed_url.netloc}{parsed_url.path}/{now.year}/{now.month}/{now.day}/{now.hour}/{now.minute}"
+    return f"{browser}/{parsed_url.netloc}{parsed_url.path}/{now.year}/{now.month}/{now.day}/{now.hour}/{now.minute}"
+
+
+def parse_config():
+    """
+    Decodes, loads, and parses the config file into a dict
+    :return: Python dict containing config
+    """
+    decoded_config = yaml.safe_load(base64.b64decode(CONFIG))
+    decoded_config['chrome_urls'] = []
+    decoded_config['firefox_urls'] = []
+    for page in decoded_config['pages']:
+        if page['browser'] == 'chrome':
+            decoded_config['chrome_urls'].append(page['url'])
+        elif page['browser'] == 'firefox':
+            decoded_config['firefox_urls'].append(page['url'])
+    return decoded_config
