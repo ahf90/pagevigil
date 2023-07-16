@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/ahf90/pagevigil/compare/v1.3.2...v1.3.3) (2023-07-16)
+
+
+### Chores
+
+* fix push ([#25](https://github.com/ahf90/pagevigil/issues/25)) ([d77e2ab](https://github.com/ahf90/pagevigil/commit/d77e2ab19ac6ebc0a6ca882a24fa0421f0550c15))
+
 ## [1.3.2](https://github.com/ahf90/pagevigil/compare/v1.3.1...v1.3.2) (2023-07-14)
 
 
