@@ -1,3 +1,15 @@
+## [1.4.0](https://github.com/ahf90/pagevigil/compare/v1.3.6...v1.4.0) (2023-07-16)
+
+
+### Features
+
+* separate out chrome and firefox urls ([#29](https://github.com/ahf90/pagevigil/issues/29)) ([41883e7](https://github.com/ahf90/pagevigil/commit/41883e7b876bfbba0b920a0aeadbba50a90fbb3e))
+
+
+### Chores
+
+* update image tag to v1.3.6 [skip ci] ([e9c6a78](https://github.com/ahf90/pagevigil/commit/e9c6a78fece05902a9065fb61b2056a7329feb65))
+
 ## [1.3.6](https://github.com/ahf90/pagevigil/compare/v1.3.5...v1.3.6) (2023-07-16)
 
 
