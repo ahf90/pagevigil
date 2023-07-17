@@ -1,1 +1,1 @@
-latest_image_tag = "v1.4.1"
+latest_image_tag = "v1.4.2"
