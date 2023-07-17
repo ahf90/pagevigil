@@ -45,9 +45,9 @@ def handler(event, context):
 
     decoded_config = parse_config()
     for page in decoded_config["chrome_urls"]:
-        chrome.get(page["url"])
+        chrome.get(page)
         chrome.get_screenshot_as_file("/tmp/temp_screenshot.png")
-        store_in_s3(page["url"], "chrome")
+        store_in_s3(page, "chrome")
 
     chrome.close()
     chrome.quit()
