@@ -1,3 +1,15 @@
+## [1.5.3](https://github.com/ahf90/pagevigil/compare/v1.5.2...v1.5.3) (2023-07-17)
+
+
+### Chores
+
+* update image tag to v1.5.2 [skip ci] ([25642a9](https://github.com/ahf90/pagevigil/commit/25642a946fb026a8cbc579dd3e9993cbc65f8d68))
+
+
+### Fixes
+
+* retrieve page correctly ([#35](https://github.com/ahf90/pagevigil/issues/35)) ([f22a876](https://github.com/ahf90/pagevigil/commit/f22a876d0dace85121d67eb215b1738d9b8bcece))
+
 ## [1.5.2](https://github.com/ahf90/pagevigil/compare/v1.5.1...v1.5.2) (2023-07-17)
 
 
