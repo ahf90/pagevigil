@@ -1,3 +1,16 @@
+## [1.4.2](https://github.com/ahf90/pagevigil/compare/v1.4.1...v1.4.2) (2023-07-17)
+
+
+### Chores
+
+* **deps:** update terraform aws to v5.8.0 ([#21](https://github.com/ahf90/pagevigil/issues/21)) ([b8b2eb8](https://github.com/ahf90/pagevigil/commit/b8b2eb8c26a20651a8cfba320b02d45e04952528))
+* update image tag to v1.4.1 [skip ci] ([15eb63b](https://github.com/ahf90/pagevigil/commit/15eb63bef761cc81bb512190701227cec62f38cc))
+
+
+### Fixes
+
+* terraform null_resource runs on version change ([#31](https://github.com/ahf90/pagevigil/issues/31)) ([1f1e904](https://github.com/ahf90/pagevigil/commit/1f1e904fc5c83512fec7c53ae62a5304971017b5))
+
 ## [1.4.1](https://github.com/ahf90/pagevigil/compare/v1.4.0...v1.4.1) (2023-07-16)
 
 
