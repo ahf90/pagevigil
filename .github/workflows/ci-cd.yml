@@ -155,7 +155,9 @@ jobs:
 
       - name: Update image tag in terraform.tfvars
         run: |
-           echo "latest_image_tag = \"${{ needs.semantic-release.outputs.new_release_git_tag }}\"" > terraform/terraform.tfvars
+          cp terraform.tfvars terraform.tfvars.bak
+          echo 'latest_image_tag = "${{ needs.semantic-release.outputs.new_release_git_tag }}"' > terraform.tfvars
+          cat terraform.tfvars.bak | tail -n+2 >> terraform.tfvars
 
       - name: Setup Git User
         run: |

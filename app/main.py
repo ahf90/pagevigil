@@ -11,14 +11,18 @@ import yaml
 
 CONFIG = os.environ.get("CONFIG")
 BUCKET_ID = os.environ.get("BUCKET_ID")
+SNS_TOPIC_ARN = os.environ.get("BUCKET_ID")
 
 s3 = boto3.client("s3")
+sns = boto3.client("sns")
 
 
 def handler(event, context):
-    if not CONFIG or not BUCKET_ID:
-        # TODO: send to SNS
+    if not CONFIG or not BUCKET_ID or not SNS_TOPIC_ARN:
         print("Environment variables not set")
+        sns.publish(TopicArn=SNS_TOPIC_ARN,
+                    Message="Environment variables not set",
+                    Subject="PageVigil Error: Environment variables not set")
         raise
 
     options = webdriver.ChromeOptions()
@@ -42,7 +46,7 @@ def handler(event, context):
     for page in decoded_config["chrome_urls"]:
         chrome.get(page["url"])
         chrome.get_screenshot_as_file("/tmp/temp_screenshot.png")
-        store_in_s3(page["url"])
+        store_in_s3(page["url"], "chrome")
 
     chrome.close()
     chrome.quit()
@@ -66,12 +70,22 @@ def store_in_s3(url: str, browser: str):
         print("Upload Successful", url)
         return url
     except FileNotFoundError:
-        # TODO: send to SNS
         print("File not found")
+        sns.publish(TopicArn=SNS_TOPIC_ARN,
+                    Message="File not found",
+                    Subject="PageVigil Error: File not found")
         return None
     except NoCredentialsError:
-        # TODO: send to SNS
         print("Credentials")
+        sns.publish(TopicArn=SNS_TOPIC_ARN,
+                    Message="Insufficient credentials to write to S3",
+                    Subject="PageVigil Error: NoCredentialsError")
+        return None
+    except Exception as e:
+        print("Unknown exception")
+        sns.publish(TopicArn=SNS_TOPIC_ARN,
+                    Message="PageVigil Error: Unknown exception",
+                    Subject="PageVigil Error: Unknown exception")
         return None
 
 
