@@ -1,3 +1,15 @@
+## [1.5.0](https://github.com/ahf90/pagevigil/compare/v1.4.2...v1.5.0) (2023-07-17)
+
+
+### Features
+
+* add sns for errors ([#32](https://github.com/ahf90/pagevigil/issues/32)) ([0743eb2](https://github.com/ahf90/pagevigil/commit/0743eb26159c75e89d2495d3bb7b9b6879d94989))
+
+
+### Chores
+
+* update image tag to v1.4.2 [skip ci] ([0b5ffc8](https://github.com/ahf90/pagevigil/commit/0b5ffc8fb0bb7a67dfd9374635dc106389e256cf))
+
 ## [1.4.2](https://github.com/ahf90/pagevigil/compare/v1.4.1...v1.4.2) (2023-07-17)
 
 
