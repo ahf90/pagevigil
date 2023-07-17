@@ -1,2 +1,2 @@
-latest_image_tag = "v1.4.2"
+latest_image_tag = "v1.5.1"
 errors_email     = "me@alexfriedman.dev"
