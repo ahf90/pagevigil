@@ -154,6 +154,7 @@ jobs:
           private_key: ${{ secrets.SEMANTIC_APP_PRIVATE_KEY }}
 
       - name: Update image tag in terraform.tfvars
+        working-directory: terraform
         run: |
           cp terraform.tfvars terraform.tfvars.bak
           echo 'latest_image_tag = "${{ needs.semantic-release.outputs.new_release_git_tag }}"' > terraform.tfvars
