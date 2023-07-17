@@ -36,7 +36,7 @@ module "screenshot_lambda" {
 resource "aws_cloudwatch_event_rule" "cron" {
   name                = "PageVigilLambdaCron"
   description         = "Minutely event to trigger the PageVigil Lambda"
-  schedule_expression = "rate(60 minutes)"
+  schedule_expression = var.frequency != 1 ? "rate(${var.frequency} minutes)" : "rate(${var.frequency} minute)"
 }
 
 resource "aws_cloudwatch_event_target" "cron_lambda_function" {
