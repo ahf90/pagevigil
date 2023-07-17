@@ -1,3 +1,15 @@
+## [1.6.0](https://github.com/ahf90/pagevigil/compare/v1.5.3...v1.6.0) (2023-07-17)
+
+
+### Features
+
+* add rate as a configurable variable ([#36](https://github.com/ahf90/pagevigil/issues/36)) ([7038171](https://github.com/ahf90/pagevigil/commit/7038171375dedab2ee87eb34c495118646663a20))
+
+
+### Chores
+
+* update image tag to v1.5.3 [skip ci] ([1e31941](https://github.com/ahf90/pagevigil/commit/1e319417db3bee0ada1c44f23421ba7617caa982))
+
 ## [1.5.3](https://github.com/ahf90/pagevigil/compare/v1.5.2...v1.5.3) (2023-07-17)
 
 
