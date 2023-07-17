@@ -28,6 +28,9 @@ module "pagevigil" {
 }
 
 resource "null_resource" "copy_image" {
+  triggers = {
+    version = var.latest_image_tag
+  }
   provisioner "local-exec" {
     command     = <<EOT
       docker pull --platform linux/x86_64 public.ecr.aws/m5e2w3a9/pagevigil:${var.latest_image_tag}
@@ -37,6 +40,5 @@ resource "null_resource" "copy_image" {
     EOT
     interpreter = ["/bin/bash", "-c"]
   }
-
   depends_on = [module.pagevigil]
 }
