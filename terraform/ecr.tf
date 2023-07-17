@@ -34,7 +34,7 @@ resource "null_resource" "copy_image" {
   provisioner "local-exec" {
     command     = <<EOT
       docker pull --platform linux/x86_64 public.ecr.aws/m5e2w3a9/pagevigil:${var.latest_image_tag}
-      aws ecr get-login-password --region ${data.aws_region.current.name} | docker login --username AWS --password-stdin ${data.aws_caller_identity.current.account_id}}.dkr.ecr.${data.aws_region.current.name}.amazonaws.com
+      aws ecr get-login-password --region ${data.aws_region.current.name} | docker login --username AWS --password-stdin ${data.aws_caller_identity.current.account_id}.dkr.ecr.${data.aws_region.current.name}.amazonaws.com
       docker tag public.ecr.aws/m5e2w3a9/pagevigil:${var.latest_image_tag} ${data.aws_caller_identity.current.account_id}.dkr.ecr.us-east-2.amazonaws.com/pagevigil:${var.latest_image_tag}
       docker push ${data.aws_caller_identity.current.account_id}.dkr.ecr.us-east-2.amazonaws.com/pagevigil:${var.latest_image_tag}
     EOT
