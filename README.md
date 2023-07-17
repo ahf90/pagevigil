@@ -16,6 +16,8 @@ You must have both Terraform and Docker running the machine running the Terrafor
 
 1. Clone or fork the repository
 2. Update `config.yml` with the list of webpages you want to follow
-3. Update `terraform/terraform.tfvars` with the email to be used for errors
+3. Update `terraform/terraform.tfvars` with
+   1. The email to be used for errors (`errors_email`)
+   2. The frequency at which you want to screenshot the images (`frequency`)
 4. Plan and apply the Terraform
 
