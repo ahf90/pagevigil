@@ -12,8 +12,10 @@ Therefore, this creates a private ECR repo and copies the latest version to your
 ## Getting Started
 All the Terraform required to set this up is in the `terraform` folder of this repository.
 All you need to do is update your local `config.yml` with your desired webpages.
+You must have both Terraform and Docker running the machine running the Terraform
 
 1. Clone or fork the repository
 2. Update `config.yml` with the list of webpages you want to follow
-3. Plan and apply the Terraform
+3. Update `terraform/terraform.tfvars` with the email to be used for errors
+4. Plan and apply the Terraform
 
