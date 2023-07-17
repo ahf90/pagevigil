@@ -1,3 +1,15 @@
+## [1.5.2](https://github.com/ahf90/pagevigil/compare/v1.5.1...v1.5.2) (2023-07-17)
+
+
+### Chores
+
+* update image tag to v1.5.1 [skip ci] ([71fe3ba](https://github.com/ahf90/pagevigil/commit/71fe3bad7f82d41479ac2bf4f395e151dd202b81))
+
+
+### Fixes
+
+* ecr login ([#34](https://github.com/ahf90/pagevigil/issues/34)) ([7f5ad89](https://github.com/ahf90/pagevigil/commit/7f5ad89fe4381e6bef1f98630fb84f4debc962f4))
+
 ## [1.5.1](https://github.com/ahf90/pagevigil/compare/v1.5.0...v1.5.1) (2023-07-17)
 
 
