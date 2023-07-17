@@ -26,6 +26,7 @@ module "screenshot_lambda" {
     CONFIG        = local.config,
     BUCKET_ID     = module.storage_bucket.s3_bucket_id
     SNS_TOPIC_ARN = aws_sns_topic.pagevigil_errors.arn
+    REGION        = data.aws_region.current.name
   }
 
   tags       = local.tags

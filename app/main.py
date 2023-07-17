@@ -12,13 +12,14 @@ import yaml
 CONFIG = os.environ.get("CONFIG")
 BUCKET_ID = os.environ.get("BUCKET_ID")
 SNS_TOPIC_ARN = os.environ.get("BUCKET_ID")
+REGION = os.environ.get("REGION")
 
 s3 = boto3.client("s3")
-sns = boto3.client("sns")
+sns = boto3.client("sns", region_name=REGION)
 
 
 def handler(event, context):
-    if not CONFIG or not BUCKET_ID or not SNS_TOPIC_ARN:
+    if not CONFIG or not BUCKET_ID or not SNS_TOPIC_ARN or not REGION:
         print("Environment variables not set")
         sns.publish(TopicArn=SNS_TOPIC_ARN,
                     Message="Environment variables not set",
@@ -81,7 +82,7 @@ def store_in_s3(url: str, browser: str):
                     Message="Insufficient credentials to write to S3",
                     Subject="PageVigil Error: NoCredentialsError")
         return None
-    except Exception as e:
+    except Exception:
         print("Unknown exception")
         sns.publish(TopicArn=SNS_TOPIC_ARN,
                     Message="PageVigil Error: Unknown exception",
