@@ -1,3 +1,27 @@
+## [1.6.4](https://github.com/ahf90/pagevigil/compare/v1.6.3...v1.6.4) (2023-07-28)
+
+
+### Chores
+
+* **deps:** update terraform aws to v5.10.0 ([#40](https://github.com/ahf90/pagevigil/issues/40)) ([f25ff03](https://github.com/ahf90/pagevigil/commit/f25ff0398f19da442c387cce8bce5ee2431e4034))
+* update image tag to v1.6.3 [skip ci] ([5c515e5](https://github.com/ahf90/pagevigil/commit/5c515e52ab7ec7990ba4dbe16b1d48249980292f))
+
+## [1.6.3](https://github.com/ahf90/pagevigil/compare/v1.6.2...v1.6.3) (2023-07-22)
+
+
+### Chores
+
+* **deps:** update dependency certifi to v2023.7.22 ([#39](https://github.com/ahf90/pagevigil/issues/39)) ([2b884bf](https://github.com/ahf90/pagevigil/commit/2b884bf30c31233deb7ad9cb9db3559e3874921d))
+* update image tag to v1.6.2 [skip ci] ([e4b71ae](https://github.com/ahf90/pagevigil/commit/e4b71aea99c539aee8c1216913450c7354edece2))
+
+## [1.6.2](https://github.com/ahf90/pagevigil/compare/v1.6.1...v1.6.2) (2023-07-21)
+
+
+### Chores
+
+* **deps:** update terraform aws to v5.9.0 ([#38](https://github.com/ahf90/pagevigil/issues/38)) ([e7dd6cc](https://github.com/ahf90/pagevigil/commit/e7dd6cc1b67286a9ec4bc00f31c8f3cc699a415d))
+* update image tag to v1.6.1 [skip ci] ([36c7dcf](https://github.com/ahf90/pagevigil/commit/36c7dcf474e42e85931e52d0b8629dabf6291834))
+
 ## [1.6.1](https://github.com/ahf90/pagevigil/compare/v1.6.0...v1.6.1) (2023-07-17)
 
 
