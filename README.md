@@ -1,3 +1,4 @@
+[![CI/CD](https://github.com/ahf90/pagevigil/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/ahf90/pagevigil/actions/workflows/ci-cd.yml)
 # PageVigil
 PageVigil screenshots your webpages and stores the screenshots in S3.
 
