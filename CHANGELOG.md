@@ -1,3 +1,11 @@
+## [1.6.6](https://github.com/ahf90/pagevigil/compare/v1.6.5...v1.6.6) (2023-07-31)
+
+
+### Chores
+
+* **deps:** update dependency selenium to v4.11.0 ([#42](https://github.com/ahf90/pagevigil/issues/42)) ([20f29f7](https://github.com/ahf90/pagevigil/commit/20f29f71d4e5a6a1c157fe4322787db084293b77))
+* update image tag to v1.6.5 [skip ci] ([8e90f94](https://github.com/ahf90/pagevigil/commit/8e90f941473a4469611c6ffaaa1016b9dc8be755))
+
 ## [1.6.5](https://github.com/ahf90/pagevigil/compare/v1.6.4...v1.6.5) (2023-07-28)
 
 
