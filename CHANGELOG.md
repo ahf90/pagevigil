@@ -1,3 +1,11 @@
+## [1.6.11](https://github.com/ahf90/pagevigil/compare/v1.6.10...v1.6.11) (2023-08-23)
+
+
+### Chores
+
+* **deps:** update terraform terraform-aws-modules/s3-bucket/aws to v3.15.0 ([#47](https://github.com/ahf90/pagevigil/issues/47)) ([e4a3505](https://github.com/ahf90/pagevigil/commit/e4a350580d65b03949bce900377c4d4b9d2b9c5e))
+* update image tag to v1.6.10 [skip ci] ([c97b183](https://github.com/ahf90/pagevigil/commit/c97b18396c67864a009a2231fad336d6ea175fa9))
+
 ## [1.6.10](https://github.com/ahf90/pagevigil/compare/v1.6.9...v1.6.10) (2023-08-18)
 
 
