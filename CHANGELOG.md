@@ -1,3 +1,11 @@
+## [1.6.12](https://github.com/ahf90/pagevigil/compare/v1.6.11...v1.6.12) (2023-08-24)
+
+
+### Chores
+
+* **deps:** update aws-actions/configure-aws-credentials action to v3 ([#48](https://github.com/ahf90/pagevigil/issues/48)) ([a8402cd](https://github.com/ahf90/pagevigil/commit/a8402cd0c94f9077da86e15fe446cb34a0beb9b8))
+* update image tag to v1.6.11 [skip ci] ([d5ea392](https://github.com/ahf90/pagevigil/commit/d5ea3924b7b921f55170e104fbfa0a7ef1209710))
+
 ## [1.6.11](https://github.com/ahf90/pagevigil/compare/v1.6.10...v1.6.11) (2023-08-23)
 
 
