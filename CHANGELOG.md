@@ -1,3 +1,11 @@
+## [1.6.14](https://github.com/ahf90/pagevigil/compare/v1.6.13...v1.6.14) (2023-08-31)
+
+
+### Chores
+
+* **deps:** update cycjimmy/semantic-release-action action to v4 ([#50](https://github.com/ahf90/pagevigil/issues/50)) ([9ff56e9](https://github.com/ahf90/pagevigil/commit/9ff56e94be15f67872186ccd8eae5ee755bb50bd))
+* update image tag to v1.6.13 [skip ci] ([69993b2](https://github.com/ahf90/pagevigil/commit/69993b2f70c408be5de01fc25631b2a6eb5e1c60))
+
 ## [1.6.13](https://github.com/ahf90/pagevigil/compare/v1.6.12...v1.6.13) (2023-08-28)
 
 
