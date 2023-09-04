@@ -1,3 +1,11 @@
+## [1.6.16](https://github.com/ahf90/pagevigil/compare/v1.6.15...v1.6.16) (2023-09-04)
+
+
+### Chores
+
+* **deps:** update actions/checkout action to v4 ([#52](https://github.com/ahf90/pagevigil/issues/52)) ([55a83d7](https://github.com/ahf90/pagevigil/commit/55a83d77c45776a2fbfc0ec47ec4ebac3be35ab7))
+* update image tag to v1.6.15 [skip ci] ([ea15596](https://github.com/ahf90/pagevigil/commit/ea1559643dce90503a021f931127dc33cb4f01a2))
+
 ## [1.6.15](https://github.com/ahf90/pagevigil/compare/v1.6.14...v1.6.15) (2023-09-01)
 
 
