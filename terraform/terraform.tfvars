@@ -1,3 +1,3 @@
-latest_image_tag = "v1.6.17"
+latest_image_tag = "v1.6.18"
 frequency        = 60
 errors_email     = "me@alexfriedman.dev"
