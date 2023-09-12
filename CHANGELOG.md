@@ -1,3 +1,11 @@
+## [1.6.20](https://github.com/ahf90/pagevigil/compare/v1.6.19...v1.6.20) (2023-09-12)
+
+
+### Chores
+
+* **deps:** update docker/setup-buildx-action action to v3 ([#56](https://github.com/ahf90/pagevigil/issues/56)) ([74638ce](https://github.com/ahf90/pagevigil/commit/74638ce7d8fb86fe2a7e34ebe5d0eff96110f0e2))
+* update image tag to v1.6.19 [skip ci] ([02e87fa](https://github.com/ahf90/pagevigil/commit/02e87faa2fae086433da476d706ef84e59c2048f))
+
 ## [1.6.19](https://github.com/ahf90/pagevigil/compare/v1.6.18...v1.6.19) (2023-09-12)
 
 
