@@ -1,3 +1,11 @@
+## [1.6.23](https://github.com/ahf90/pagevigil/compare/v1.6.22...v1.6.23) (2023-09-25)
+
+
+### Chores
+
+* **deps:** update actions/checkout digest to 8ade135 ([#58](https://github.com/ahf90/pagevigil/issues/58)) ([f1ec2a2](https://github.com/ahf90/pagevigil/commit/f1ec2a2b1d394529e96a53b23d98bb3338ca6e4f))
+* update image tag to v1.6.22 [skip ci] ([577347c](https://github.com/ahf90/pagevigil/commit/577347c4a40b00b5120691ce6f29e8ea222934d2))
+
 ## [1.6.22](https://github.com/ahf90/pagevigil/compare/v1.6.21...v1.6.22) (2023-09-25)
 
 
