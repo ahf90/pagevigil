@@ -1,3 +1,11 @@
+## [1.6.22](https://github.com/ahf90/pagevigil/compare/v1.6.21...v1.6.22) (2023-09-25)
+
+
+### Chores
+
+* **deps:** update amannn/action-semantic-pull-request action to v5.3.0 ([#59](https://github.com/ahf90/pagevigil/issues/59)) ([5fc5895](https://github.com/ahf90/pagevigil/commit/5fc58958bde3f7201f41beac6fe0e7854931d631))
+* update image tag to v1.6.21 [skip ci] ([366e8ed](https://github.com/ahf90/pagevigil/commit/366e8ed635173a581b5e21457ac91b0e40861f8b))
+
 ## [1.6.21](https://github.com/ahf90/pagevigil/compare/v1.6.20...v1.6.21) (2023-09-15)
 
 
