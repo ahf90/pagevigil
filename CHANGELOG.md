@@ -1,3 +1,11 @@
+## [1.6.24](https://github.com/ahf90/pagevigil/compare/v1.6.23...v1.6.24) (2023-10-03)
+
+
+### Chores
+
+* **deps:** update aws-actions/amazon-ecr-login action to v2 ([#61](https://github.com/ahf90/pagevigil/issues/61)) ([9ed86f2](https://github.com/ahf90/pagevigil/commit/9ed86f2e88faa0883d45e8fd13117f6144c1287b))
+* update image tag to v1.6.23 [skip ci] ([2360a01](https://github.com/ahf90/pagevigil/commit/2360a01329109408c68d9bb0bfaaf44c773e98e3))
+
 ## [1.6.23](https://github.com/ahf90/pagevigil/compare/v1.6.22...v1.6.23) (2023-09-25)
 
 
