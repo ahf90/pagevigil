@@ -1,3 +1,10 @@
+## [1.6.25](https://github.com/ahf90/pagevigil/compare/v1.6.24...v1.6.25) (2023-10-18)
+
+
+### Chores
+
+* update image tag to v1.6.24 [skip ci] ([5326343](https://github.com/ahf90/pagevigil/commit/5326343f7c89fb261c66b5cf24f089e5928aafa0))
+
 ## [1.6.24](https://github.com/ahf90/pagevigil/compare/v1.6.23...v1.6.24) (2023-10-03)
 
 
