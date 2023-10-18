@@ -22,5 +22,5 @@ sortedcontainers==2.4.0
 tomli==2.0.1
 trio==0.22.2
 trio-websocket==0.10.3
-urllib3==1.26.16
+urllib3==1.26.18
 wsproto==1.2.0
