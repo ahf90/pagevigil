@@ -1,3 +1,10 @@
+## [1.6.27](https://github.com/ahf90/pagevigil/compare/v1.6.26...v1.6.27) (2023-11-21)
+
+
+### Chores
+
+* **deps:** update actions/checkout digest to b4ffde6 ([#64](https://github.com/ahf90/pagevigil/issues/64)) ([833d060](https://github.com/ahf90/pagevigil/commit/833d0608c4120e881655667cc928a2d79d818d4f))
+
 ## [1.6.26](https://github.com/ahf90/pagevigil/compare/v1.6.25...v1.6.26) (2023-11-21)
 
 
