@@ -1,3 +1,11 @@
+## [1.6.26](https://github.com/ahf90/pagevigil/compare/v1.6.25...v1.6.26) (2023-11-21)
+
+
+### Chores
+
+* **deps:** update actions/setup-node action to v4 ([#65](https://github.com/ahf90/pagevigil/issues/65)) ([ab7e0b6](https://github.com/ahf90/pagevigil/commit/ab7e0b659fe66b25bcc4240e243241a3d96a8f0c))
+* update image tag to v1.6.25 [skip ci] ([cd3ce99](https://github.com/ahf90/pagevigil/commit/cd3ce9920a906dd2e01880901a51ac98191e9424))
+
 ## [1.6.25](https://github.com/ahf90/pagevigil/compare/v1.6.24...v1.6.25) (2023-10-18)
 
 
