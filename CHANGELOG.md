@@ -1,3 +1,11 @@
+## [1.6.31](https://github.com/ahf90/pagevigil/compare/v1.6.30...v1.6.31) (2024-06-27)
+
+
+### Chores
+
+* **deps:** update docker/build-push-action action to v6 ([#79](https://github.com/ahf90/pagevigil/issues/79)) ([89692f1](https://github.com/ahf90/pagevigil/commit/89692f14c190f614bca5fe146c68bd724c5008a1))
+* update image tag to v1.6.30 [skip ci] ([ff337c0](https://github.com/ahf90/pagevigil/commit/ff337c05ba845a851cf127140e0201a5fab7a9bc))
+
 ## [1.6.30](https://github.com/ahf90/pagevigil/compare/v1.6.29...v1.6.30) (2024-06-27)
 
 
