@@ -1,3 +1,19 @@
+## [1.6.28](https://github.com/ahf90/pagevigil/compare/v1.6.27...v1.6.28) (2024-06-27)
+
+
+### Chores
+
+* bump idna from 3.4 to 3.7 in /app ([#75](https://github.com/ahf90/pagevigil/issues/75)) ([03368fe](https://github.com/ahf90/pagevigil/commit/03368fee8c817f12e60e5fa683d138e12fb2693f))
+* bump urllib3 from 1.26.18 to 1.26.19 in /app ([#77](https://github.com/ahf90/pagevigil/issues/77)) ([f54a2bf](https://github.com/ahf90/pagevigil/commit/f54a2bf603a31dc86e4723808a0058d9bf38d85e))
+* **deps:** update all non-major dependencies ([#60](https://github.com/ahf90/pagevigil/issues/60)) ([12e37fe](https://github.com/ahf90/pagevigil/commit/12e37fe3dd9596568a9f9bd53b0618f927affa5a))
+* **deps:** update boto packages to v1.34.134 ([#66](https://github.com/ahf90/pagevigil/issues/66)) ([f759be0](https://github.com/ahf90/pagevigil/commit/f759be0127e28e6fb745a96bc686d14f0300faab))
+* **deps:** update dependency certifi to v2024 ([#71](https://github.com/ahf90/pagevigil/issues/71)) ([0a35689](https://github.com/ahf90/pagevigil/commit/0a3568955ffaf504b998dcb4a1ff94335454ade7))
+* **deps:** update dependency idna to v3.7 [security] ([#76](https://github.com/ahf90/pagevigil/issues/76)) ([e3973d1](https://github.com/ahf90/pagevigil/commit/e3973d1af8065ea2e6760769697c0204975b82c8))
+* **deps:** update dependency packaging to v24 ([#73](https://github.com/ahf90/pagevigil/issues/73)) ([4d67b26](https://github.com/ahf90/pagevigil/commit/4d67b268a17264bf11accf136da0a9dcb3eb7350))
+* **deps:** update dependency pytest to v8 ([#70](https://github.com/ahf90/pagevigil/issues/70)) ([ffecaaa](https://github.com/ahf90/pagevigil/commit/ffecaaa291cb42d67e3ac4977194b2925a8b1d61))
+* **deps:** update dependency urllib3 to v2 ([#80](https://github.com/ahf90/pagevigil/issues/80)) ([03134be](https://github.com/ahf90/pagevigil/commit/03134be517c32b8fb38fbc0ae811aa746cf1e78e))
+* update image tag to v1.6.26 [skip ci] ([b6b6235](https://github.com/ahf90/pagevigil/commit/b6b62358db4fe267988b85d8e9632393da001f85))
+
 ## [1.6.27](https://github.com/ahf90/pagevigil/compare/v1.6.26...v1.6.27) (2023-11-21)
 
 
