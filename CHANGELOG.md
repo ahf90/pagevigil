@@ -1,3 +1,11 @@
+## [1.6.29](https://github.com/ahf90/pagevigil/compare/v1.6.28...v1.6.29) (2024-06-27)
+
+
+### Chores
+
+* **deps:** update actions/setup-python action to v5 ([#67](https://github.com/ahf90/pagevigil/issues/67)) ([dfb2047](https://github.com/ahf90/pagevigil/commit/dfb204729628597640452527777aff23446f76e3))
+* update image tag to v1.6.28 [skip ci] ([5470c87](https://github.com/ahf90/pagevigil/commit/5470c8712e83367809028970a76f4528d2eb959d))
+
 ## [1.6.28](https://github.com/ahf90/pagevigil/compare/v1.6.27...v1.6.28) (2024-06-27)
 
 
