@@ -1,3 +1,11 @@
+## [1.6.33](https://github.com/ahf90/pagevigil/compare/v1.6.32...v1.6.33) (2024-06-27)
+
+
+### Chores
+
+* **deps:** update terraform terraform-aws-modules/lambda/aws to v7 ([#69](https://github.com/ahf90/pagevigil/issues/69)) ([c66ea87](https://github.com/ahf90/pagevigil/commit/c66ea87811f6a9856512331aaf2c564d743dc2ba))
+* update image tag to v1.6.32 [skip ci] ([c833ff7](https://github.com/ahf90/pagevigil/commit/c833ff75c00b8050ac976694a46831d28565b901))
+
 ## [1.6.32](https://github.com/ahf90/pagevigil/compare/v1.6.31...v1.6.32) (2024-06-27)
 
 
