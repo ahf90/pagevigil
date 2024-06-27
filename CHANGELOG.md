@@ -1,3 +1,11 @@
+## [1.6.32](https://github.com/ahf90/pagevigil/compare/v1.6.31...v1.6.32) (2024-06-27)
+
+
+### Chores
+
+* **deps:** update terraform terraform-aws-modules/ecr/aws to v2 ([#74](https://github.com/ahf90/pagevigil/issues/74)) ([192041f](https://github.com/ahf90/pagevigil/commit/192041f81936408f2f6c69a0bd0d01c7819de7fe))
+* update image tag to v1.6.31 [skip ci] ([2397e27](https://github.com/ahf90/pagevigil/commit/2397e27aec07f69b19fb928bbeeb91d16d589a41))
+
 ## [1.6.31](https://github.com/ahf90/pagevigil/compare/v1.6.30...v1.6.31) (2024-06-27)
 
 
