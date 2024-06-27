@@ -1,6 +1,6 @@
 module "pagevigil" {
   source  = "terraform-aws-modules/ecr/aws"
-  version = "1.6.0"
+  version = "1.7.1"
 
   repository_name                   = "pagevigil"
   repository_read_write_access_arns = []
