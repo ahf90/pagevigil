@@ -1,3 +1,11 @@
+## [1.6.30](https://github.com/ahf90/pagevigil/compare/v1.6.29...v1.6.30) (2024-06-27)
+
+
+### Chores
+
+* **deps:** update getsentry/action-github-app-token action to v3 ([#72](https://github.com/ahf90/pagevigil/issues/72)) ([9640af8](https://github.com/ahf90/pagevigil/commit/9640af81550631a33c2b62f2dfb13aa3408668cd))
+* update image tag to v1.6.29 [skip ci] ([213f817](https://github.com/ahf90/pagevigil/commit/213f817243ca1b120cc7c9d67cdb5012935077fb))
+
 ## [1.6.29](https://github.com/ahf90/pagevigil/compare/v1.6.28...v1.6.29) (2024-06-27)
 
 
