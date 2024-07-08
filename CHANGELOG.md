@@ -1,3 +1,11 @@
+## [1.6.36](https://github.com/ahf90/pagevigil/compare/v1.6.35...v1.6.36) (2024-07-08)
+
+
+### Chores
+
+* **deps:** update dependency certifi to v2024.7.4 [security] ([#83](https://github.com/ahf90/pagevigil/issues/83)) ([2168c55](https://github.com/ahf90/pagevigil/commit/2168c55ecb1c741e12010be9820fca7e4246c108))
+* update image tag to v1.6.35 [skip ci] ([0670fbe](https://github.com/ahf90/pagevigil/commit/0670fbe08269e03529443b617c68ac6b0c2c2d7c))
+
 ## [1.6.35](https://github.com/ahf90/pagevigil/compare/v1.6.34...v1.6.35) (2024-06-27)
 
 
