@@ -1,3 +1,11 @@
+## [1.6.41](https://github.com/ahf90/pagevigil/compare/v1.6.40...v1.6.41) (2024-08-03)
+
+
+### Chores
+
+* **deps:** update dependency attrs to v24 ([#88](https://github.com/ahf90/pagevigil/issues/88)) ([bfb635b](https://github.com/ahf90/pagevigil/commit/bfb635b2366c8c98f2017b21a0df336646108de3))
+* update image tag to v1.6.40 [skip ci] ([8248ea7](https://github.com/ahf90/pagevigil/commit/8248ea717bd3183c8a7745a65655dc5540746d8d))
+
 ## [1.6.40](https://github.com/ahf90/pagevigil/compare/v1.6.39...v1.6.40) (2024-07-20)
 
 
