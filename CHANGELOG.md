@@ -1,3 +1,11 @@
+## [1.6.43](https://github.com/ahf90/pagevigil/compare/v1.6.42...v1.6.43) (2024-08-16)
+
+
+### Chores
+
+* **deps:** update boto packages to v1.35.0 ([#90](https://github.com/ahf90/pagevigil/issues/90)) ([e94cf64](https://github.com/ahf90/pagevigil/commit/e94cf64318c05fdc30634fdaa67fc3f7e35ed5d5))
+* update image tag to v1.6.42 [skip ci] ([ad40a16](https://github.com/ahf90/pagevigil/commit/ad40a161f4fd24dafee68f79f8bb7d1c31e3777d))
+
 ## [1.6.42](https://github.com/ahf90/pagevigil/compare/v1.6.41...v1.6.42) (2024-08-03)
 
 
