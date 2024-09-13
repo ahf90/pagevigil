@@ -1,6 +1,6 @@
 module "public_ecr" {
   source  = "terraform-aws-modules/ecr/aws"
-  version = "2.2.1"
+  version = "2.3.0"
 
   repository_name = "pagevigil"
   repository_type = "public"
