@@ -1,3 +1,11 @@
+## [1.6.47](https://github.com/ahf90/pagevigil/compare/v1.6.46...v1.6.47) (2024-09-15)
+
+
+### Chores
+
+* **deps:** update dependency idna to v3.10 ([#93](https://github.com/ahf90/pagevigil/issues/93)) ([5612720](https://github.com/ahf90/pagevigil/commit/5612720ae3c474230ae4b7c0a8d272740ae979eb))
+* update image tag to v1.6.46 [skip ci] ([b70b409](https://github.com/ahf90/pagevigil/commit/b70b40957a3516b7041ba9e8222c478306622e14))
+
 ## [1.6.46](https://github.com/ahf90/pagevigil/compare/v1.6.45...v1.6.46) (2024-09-13)
 
 
