@@ -1,3 +1,11 @@
+## [1.6.48](https://github.com/ahf90/pagevigil/compare/v1.6.47...v1.6.48) (2024-09-20)
+
+
+### Chores
+
+* **deps:** update all non-major dependencies ([#94](https://github.com/ahf90/pagevigil/issues/94)) ([cde3235](https://github.com/ahf90/pagevigil/commit/cde3235192ca7e58f2cdfd5cfa1357dd233af2f7))
+* update image tag to v1.6.47 [skip ci] ([482d0e7](https://github.com/ahf90/pagevigil/commit/482d0e705902786a66e254bb50175857753af634))
+
 ## [1.6.47](https://github.com/ahf90/pagevigil/compare/v1.6.46...v1.6.47) (2024-09-15)
 
 
