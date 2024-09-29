@@ -1,6 +1,6 @@
 module "screenshot_lambda" {
   source  = "terraform-aws-modules/lambda/aws"
-  version = "7.9.0"
+  version = "7.10.0"
 
   function_name                           = "pagevigil"
   description                             = "Screenshots pages and stores the screenshots in S3"
