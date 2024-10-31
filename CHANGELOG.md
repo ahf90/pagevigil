@@ -1,3 +1,11 @@
+## [1.6.55](https://github.com/ahf90/pagevigil/compare/v1.6.54...v1.6.55) (2024-10-31)
+
+
+### Chores
+
+* **deps:** update actions/checkout digest to 11bd719 ([#99](https://github.com/ahf90/pagevigil/issues/99)) ([d7f359c](https://github.com/ahf90/pagevigil/commit/d7f359c47915f2e6fd5054918865a627d947f810))
+* update image tag to v1.6.54 [skip ci] ([4318e61](https://github.com/ahf90/pagevigil/commit/4318e61eba98f1ba467b2234b0cfbd9d3b8c87cb))
+
 ## [1.6.54](https://github.com/ahf90/pagevigil/compare/v1.6.53...v1.6.54) (2024-10-30)
 
 
