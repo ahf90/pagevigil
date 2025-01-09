@@ -6,7 +6,7 @@ resource "random_string" "random" {
 
 module "storage_bucket" {
   source        = "terraform-aws-modules/s3-bucket/aws"
-  version       = "4.2.0"
+  version       = "4.3.0"
   bucket        = "pagevigil-${random_string.random.result}"
   force_destroy = true
 
