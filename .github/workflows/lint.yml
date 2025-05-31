@@ -28,6 +28,6 @@ jobs:
         with:
           path: .
       - name: terraform validate
-        uses: dflook/terraform-validate@v1
+        uses: dflook/terraform-validate@v2
         with:
           path: .
