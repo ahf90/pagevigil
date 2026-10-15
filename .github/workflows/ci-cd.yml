@@ -72,9 +72,9 @@ jobs:
           persist-credentials: false
 
       - name: 'Setup Node'
-        uses: actions/setup-node@v4.1.0
+        uses: actions/setup-node@v4.4.0
         with:
-          node-version: 18.15.0
+          node-version: 18.20.8
 
       - name: Semantic bot token
         id: bot-token
@@ -85,7 +85,7 @@ jobs:
 
       - name: Semantic Release
         id: semantic
-        uses: cycjimmy/semantic-release-action@v4.1.0
+        uses: cycjimmy/semantic-release-action@v4.2.2
         with:
           semantic_version: 19.0.5
           extra_plugins: |
